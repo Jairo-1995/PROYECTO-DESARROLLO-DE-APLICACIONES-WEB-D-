@@ -1,85 +1,244 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos Amazónicos</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body style="font-family: Arial, sans-serif; margin: 5px; padding: 0; background-color: #bed7a9;">
+
+<body>
+
+    <!-- HEADER Y NAVBAR -->
     <header>
-        <h1>Venta de Productos Amazónicos</h1>
-        <nav>
-            <a href="#inicio">Inicio</a> |
-            <a href="#quienes-somos">Quiénes Somos</a> |
-            <a href="#servicios">Servicios y Productos</a> |
-            <a href="#contacto">Contacto</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand" href="#">Productos Amazónicos</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quienes-somos">Quiénes Somos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">Productos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
+    <!-- MAIN -->
     <main>
-        <section id="inicio">
+
+        <!-- INICIO -->
+        <section id="inicio" class="container text-center p-5">
             <article>
-                <h2>Inicio</h2>
-                <p>Bienvenidos a nuestro proyecto dedicado a la difusión y comercialización de productos amazónicos. Esta plataforma está diseñada para ofrecer una experiencia de compra confiable y atractiva, donde los visitantes puedan conocer la diversidad de la Amazonía y acceder a artículos auténticos elaborados por productores locales. Nuestro enfoque está en la sostenibilidad, la identidad cultural y el apoyo al emprendedor regional. Navega por nuestras secciones para descubrir más sobre nosotros, nuestros productos y cómo contactarnos.</p>
+                <h1 class="display-4">Venta de Productos Amazónicos</h1>
+
+                <p class="lead">
+                    Bienvenidos a nuestro proyecto dedicado a la difusión y comercialización de productos amazónicos. Esta plataforma está diseñada para ofrecer una experiencia de compra confiable y atractiva, donde los visitantes puedan conocer la diversidad de la Amazonía y acceder a artículos auténticos elaborados por productores locales. Nuestro enfoque está en la sostenibilidad, la identidad cultural y el apoyo al emprendedor regional. Navega por nuestras secciones para descubrir más sobre nosotros, nuestros productos y cómo contactarnos.
+                </p>
+               <h2 class="text-center mb-3">contactos</h2>
+               <h2 class="text-center mb-3">contactos</h2>
+                <iframe style="width: 560px; height: 315px;" src="https://www.youtube.com/embed/X6LcHAk-9nc?si=AkeOYSy_z0asT15D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="container bg-light p-4 rounded shadow m-2.2" style="margin-top: -20px;"></iframe> 
+                </p>
+                <a href="#servicios" class="btn btn-success btn-lg m-2">
+                    Ver Productos
+                </a>
+
+                <a href="#contacto" class="btn btn-outline-success btn-lg m-2">
+                    Contactar
+                </a>
             </article>
         </section>
 
-        <section id="quienes-somos">
+        <!-- QUIENES SOMOS -->
+        <section id="quienes-somos" class="container p-4">
             <article>
-                <h2>Quiénes Somos</h2>
-                <p>Somos apasionados por conectar la riqueza de la Amazonía ecuatoriana con tu hogar. Nacimos con el propósito de valorar y difundir los tesoros naturales y artesanales de nuestras comunidades indígenas. Cada producto que ofrecemos, productos 100% naturales como:yuca, platano, mani, caña, uva, y muchas cosas mas hasta artesanías únicas, es seleccionado bajo principios de comercio justo y sostenibilidad.Creemos en un consumo consciente que respeta la selva y apoya el desarrollo de las familias amazónicas. Al elegirnos, no solo adquieres un producto de calidad excepcional, sino que te conviertes en guardián de nuestra biodiversidad y nuestras tradiciones ancestrales.</p>
-                <img src="img.jpeg" width="300" height="200" alt="Productos amazónicos representativos" /> <img src="img2.jpg" width="300" height="200" alt="Artesanías amazónicas" /> <img src="img3.png" width="300" height="200" alt="Textiles amazónicos" />
-            </article>
-        </section>
 
-        <section id="servicios">
-            <article>
-                <h2>Servicios y Productos</h2>
-                <p>En esta sección encontrarás los principales servicios y productos que ofrecemos a nuestros clientes:</p>
-                <ul>
-                    <li>Venta de artesanías típicas amazónicas realizadas a mano.</li>
-                    <li>Distribución de alimentos orgánicos y productos naturales de la región amazónica.</li>
+                <h2 class="text-center mb-4">Quiénes Somos</h2>
 
-                </ul>
-            </article>
-        </section>
+                <div class="row align-items-center">
 
-        <aside>
-            <h2>Información adicional</h2>
-            <p>Promoción especial: 10% de descuento en el primer pedido en línea.</p>
-            <p>Horario de atención: Lunes a viernes, de 09:00 a 18:00.</p>
-            <p>Envíos a todo el país con empaques ecológicos y entrega segura.</p>
-        </aside>
+                    <div class="col-md-6">
+                        <p>
+                        Somos apasionados por conectar la riqueza de la Amazonía ecuatoriana con tu hogar. Nacimos con el propósito de valorar y difundir los tesoros naturales y artesanales de nuestras comunidades indígenas. Cada producto que ofrecemos, productos 100% naturales como:yuca, platano, mani, caña, uva, y muchas cosas mas hasta artesanías únicas, es seleccionado bajo principios de comercio justo y sostenibilidad.Creemos en un consumo consciente que respeta la selva y apoya el desarrollo de las familias amazónicas. Al elegirnos, no solo adquieres un producto de calidad excepcional, sino que te conviertes en guardián de nuestra biodiversidad y nuestras tradiciones ancestrales.
+                        </p>
+                    </div>
 
-        <section id="contacto">
-            <article>
-                <h2>Contacto</h2>
-                <p>Para consultas, pedidos o alianzas comerciales, comunícate con nosotros mediante los siguientes canales:</p>
-                <p>Correo electrónico: productosamazonicos@gmail.com</p>
-                <p>WhatsApp: 0991842412</p>
-                <p>Dirección:Canton Arajuno, calle principal: Av curaray, San Lorenzo </p>
-                <p>Redes sociales:</p>
-                <ul>
-                   <p>facebook:
-                    <a href="https://www.facebook.com/profile.php?id=100094441086644" target="_blank">Productos Amazónicos</a></p>
-                    <p>Instagram:
-                    <a href="https://www.instagram.com/productosamazonicos/" target="_blank">Productos Amazónicos</a>
-                   </p>
-                </ul>
-                <div> 
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/X6LcHAk-9nc?si=AkeOYSy_z0asT15D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7178.538350057433!2d-77.68593881353995!3d-1.2324647001807014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1781489482370!5m2!1ses-419!2sec" width="400" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="col-md-6">
+                        <div class="row">
+
+                            <div class="col-4">
+                                <img src="img/personas.jpg" width="450" height="295" alt="Productos Amazónicos">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </article>
         </section>
+
+        <!-- PRODUCTOS -->
+        <section id="servicios" class="container p-5" style="margin-top: -50px;">
+            <article>
+                <h2 class="text-center mb-5">Productos Destacados</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow">
+                            <img src="img/artesania.jpg" class="card-img-top" alt="Artesanías">
+                            <div class="card-body">
+                                <h5 class="card-title">Artesanías</h5>
+                                <p class="card-text">
+                                    Productos elaborados a mano por artesanos amazónicos.
+                                </p>
+                                <a href="#" class="btn btn-success">
+                                    Más Información
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow">
+                            <img src="img/producto.jpeg" class="card-img-top" alt="Productos Naturales">
+                            <div class="card-body">
+                                <h5 class="card-title">Productos Naturales</h5>
+                                <p class="card-text">
+                                    Alimentos orgánicos y productos saludables de la región.
+                                </p>
+                                <a href="#" class="btn btn-success">
+                                    Más Información
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow">
+                            <img src="img/fruta.jpeg" class="card-img-top" alt="Frutas Exoticas">
+                            <div class="card-body">
+                                <h5 class="card-title">Frutas Exoticas</h5>
+                                <p class="card-text">
+                                    Diseños inspirados en la cultura ancestral amazónica.
+                                </p>
+                                <a href="#" class="btn btn-success">
+                                    Más Información
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <aside class="container bg-light p-4 rounded shadow m-2.2" style="margin-top: -20px;">
+               <h2 class="text-center mb-3">contactos</h2>
+               <p> Correo: amazonicoproduc@gmail.com</p>
+               <p> whatsapp: 0991842412</p>
+               <p>Dirección:Canton Arajuno, calle principal: Av curaray, San Lorenzo </p>
+        </aside>
+        <!-- ASIDE -->
+        
+        <aside class="container bg-light p-4 rounded shadow m-2.2" style="margin-top: 20px;">
+            <h3>Información Adicional</h3>
+            <p>10% de descuento en tu primera compra.</p>
+            <p>Atención de lunes a viernes de 09h00 a 18h00.</p>
+            <p>Envíos a todo el Ecuador.</p>
+        </aside>
+        <section id="ubicacion" class="container p-5" style="margin-top: -30px;">
+            <article>
+                <h2 class="text-center mb-4">Nuestra Ubicación</h2>
+                <p>Estamos ubicados en el corazón de la Amazonía Ecuatoriana, rodeados de naturaleza y tradición.</p>
+               <div style="text-align: center;"> 
+             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7178.538350057433!2d-77.68593881353995!3d-1.2324647001807014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1781489482370!5m2!1ses-419!2sec" width="400" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="container bg-light p-4 rounded shadow m-2.2" style="margin-top: -20px;"></iframe>
+            </article>
+        </section>
+        <!-- CONTACTO -->
+        <section id="contacto" class="container p-5" style="margin-top: -60px;">
+            <article>
+                <h2 class="text-center mb-4">Contáctanos</h2>
+                <form>
+
+                    <div class="mb-3">
+                        <label class="form-label">Nombre</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Asunto</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Mensaje</label>
+                        <textarea class="form-control" rows="5"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-success">
+                        Enviar Mensaje
+                    </button>
+
+                </form>
+
+                <div class="text-center mt-4">
+
+                    <a href="https://www.facebook.com/profile.php?id=100094441086644"
+                        class="btn btn-primary m-2" target="_blank">
+                        Facebook
+                    </a>
+
+                    <a href="https://www.instagram.com/"
+                        class="btn btn-warning m-2" target="_blank">
+                        Instagram
+                    </a>
+
+                </div>
+
+            </article>
+
+        </section>
+
     </main>
 
-    <footer>
-        <p>Contacto: productosamazonicos@gmail.com | 0991842412</p>
-        <p>&copy; 2026 Productos Amazónicos. Todos los derechos reservados.</p>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center p-3">
+
+        <p>&copy; 2026 Productos Amazónicos</p>
+
         <p>Realizado por: Jairo Eliecer Mamallacta Andy</p>
-        <p>Asignatura: Desarrollo de Aplicaciones Web (D) </p>
+
+        <p>Desarrollo de Aplicaciones Web</p>
 
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
-</html> 
+
+</html>
